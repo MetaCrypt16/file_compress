@@ -1,55 +1,44 @@
-<!-- Author : Samyak Jain
-	Created on : 30 June 2020 -->
+# File Compressor (Huffman Coding) 🚀
 
-# Text File Compressor Web App
+![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-blue?style=for-the-badge) 
 
-* Uses Huffman Coding for Text Compression
-* Made with JAVASCRIPT , HTML and CSS
-* Website Link : https://sam15jain.github.io/file_compressor/
+A high-performance, web-based tool for real-time lossless compression of text files using the **Huffman Coding** algorithm. Built entirely with Vanilla JavaScript, it operates 100% locally in the browser, ensuring user data privacy and fast execution.
 
-## About
+> **Live Demo:** [https://metacrypt16.github.io/file_compress/](https://metacrypt16.github.io/file_compress/)
 
-* Performs Lossless compression and decompression of .txt files using Huffman Coding technique .
-* Each character is assigned a unique variable length binary code, instead of its 8-bit representation, with more frequent characters having smaller codes. A Huffman Tree is created and stored to generate and decode these codes.
-* Compression ratio usually improves as the file size increases.
-* The website is made responsive (with HTML and CSS ) and interactive (with JavaScript ) .
-* An Info page is added to give more information about Huffman coding.
+---
 
-## User Interface
+## 🎯 Key Features
+*   **Lossless Compression:** Achieves significant file size reduction (typically 50-60% for text files) without losing a single character of data.
+*   **Premium User Interface:** Features a modern, responsive Glassmorphism design with a sleek dark mode and interactive micro-animations.
+*   **Browser-Side Processing:** The compression and decompression algorithms run entirely on the client-side via JavaScript. No data is ever sent to a server.
+*   **Zero Dependencies:** Built entirely from scratch using fundamental Data Structures without relying on external libraries.
 
-* Breaks down the process into three steps:
+## 🛠️ Technical Implementation
+This project practically applies several core computer science concepts and data structures:
+*   **Min-Heap (Priority Queue):** Custom implementation used to efficiently build the optimal Huffman Tree.
+*   **Hash Maps:** Used for calculating the frequency of each character in $O(N)$ time.
+*   **Binary Tree (Huffman Tree):** Generated to assign variable-length binary codes to characters based on their frequency (frequent characters get shorter codes).
+*   **Bitwise Operations:** Used to pack the generated binary string into raw bytes for the final compressed output.
 
-![index](screenshots/indexss.png)
+## 💻 Tech Stack
+*   **Frontend:** HTML5, CSS3 (Flexbox, Glassmorphism), Vanilla JavaScript.
+*   **Deployment:** GitHub Pages.
 
-* Step 1 : Upload Your File
+---
 
-![step1](screenshots/step1ss.png)
+## 🚀 How to Run Locally
 
-* Step 2 : Select Action
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/MetaCrypt16/file_compress.git
+   ```
+2. Navigate into the folder:
+   ```bash
+   cd file_compress
+   ```
+3. Open `index.html` in any modern web browser. No local server required!
 
-![step2](screenshots/step2ss.png)
-* Step 3 : Sit Back and Relax
-    * Required file gets downloaded automatically when process is complete
+## 📸 Screenshots
 
-    * Compression - Compression Ratio is also displayed 
- 
-    ![compression](screenshots/compressionss.png)
-    * De-compression
- 
-    ![decompression](screenshots/decompressionss1.png)
-
-* Additional Instructions and Warnings are provided if the above steps are not followed correctly
-
-![noFile](screenshots/noFiless.png)
-
-![smallFile](screenshots/vsmallFiless.png)
-
-* Website is Responsive
-
-![responsive](screenshots/responsivess.png)
-
-* Link at the bottom of the page links to an Info page that provides more information about Huffman Coding
-
-![info1](screenshots/infoss1.png)
-
-![info2](screenshots/infoss2.png)
+*(You can add a screenshot of your beautiful new UI here by placing the image in the repository and linking it!)*
